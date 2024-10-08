@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation	Essa suíte testa o site da Clinical Here
-Resource	Teste_Cadastro_resources.robot
+Resource	Teste_Cadastro_Inválido_resources.robot
 Test Setup	Abrir o navegador
 
 *** Test Cases ***
