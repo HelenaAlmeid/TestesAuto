@@ -1,6 +1,6 @@
 *** Settings ***
 Library	SeleniumLibrary
-
+ 
 *** Variables ***
 ${BROWSER}	chrome 
 ${URL}	http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/
