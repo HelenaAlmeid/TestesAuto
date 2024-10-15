@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-15T11:15:37.651223" rpa="false" schemaversion="5">
+<suite id="s1" name="Clinica Here Agenda Do Medico Tests" source="c:\Users\melov\OneDrive\Área de Trabalho\Verificação e Validação\TestesAuto\Testes da Agenda do Medico\clinica_here_agenda_do_medico_tests.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Realizar o agendamento de consulta pela recepcionista com um cpf de paciente que não esteja cadastrado" line="9">
+<kw name="Abrir o navegador" owner="clinica_here_agenda_do_medico_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:37.808723" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-15T11:15:37.808723" elapsed="1.689043"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-15T11:15:39.497766" elapsed="0.024198"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:37.808723" elapsed="1.713241"/>
+</kw>
+<kw name="Acessar a página de login do site" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:39.521964" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/parte-1/php/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-15T11:15:39.521964" elapsed="0.081321"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:39.521964" elapsed="0.081321"/>
+</kw>
+<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:39.605615" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<arg>id=cpf</arg>
+<arg>${CPF_ATIVO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:39.605615" elapsed="0.167380"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:39.603285" elapsed="0.169710"/>
+</kw>
+<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:39.781001" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
+<arg>id=senha</arg>
+<arg>${SENHA_ATIVA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:39.772995" elapsed="0.121875"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:39.772995" elapsed="0.121875"/>
+</kw>
+<kw name="Acionar o botão &quot;Entrar&quot;" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:39.894870" level="INFO">Clicking element 'name=botao_login'.</msg>
+<arg>name=botao_login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:39.894870" elapsed="0.642792"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:39.894870" elapsed="0.642792"/>
+</kw>
+<kw name="Clicar no link com o nome de um médico ativo" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:40.547494" level="INFO">Clicking link 'Isabelle Vizzu'.</msg>
+<arg>${nome_medico_ativo}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:40.547494" elapsed="0.168189"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:40.546056" elapsed="0.177628"/>
+</kw>
+<kw name="Direcionar para a página de Agenda do Médico Ativo" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:40.731693" level="INFO">${url_atual} = http://localhost/ExperienciaCriativa/parte-1/php/agenda_recepcionista_php.php?crm=1111111&amp;nome=Isabelle%20Vizzu</msg>
+<var>${url_atual}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-10-15T11:15:40.723684" elapsed="0.008009"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${url_atual}</arg>
+<arg>${URL_do_medico_ativo}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-15T11:15:40.731693" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:40.723684" elapsed="0.008009"/>
+</kw>
+<kw name="Acionar o botão &quot;Agendar Consulta&quot;" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:40.731693" level="INFO">Clicking element 'name=adicionar'.</msg>
+<arg>name=adicionar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:40.731693" elapsed="0.214185"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:40.731693" elapsed="0.214383"/>
+</kw>
+<kw name="Verificar se há no campo CRM o crm do médico escolhido" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Get Value" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.002981" level="INFO">${valor} = 1111111</msg>
+<var>${valor}</var>
+<arg>name=crm</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:40.946076" elapsed="0.056905"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${valor}</arg>
+<arg>${crm_medico_ativo}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.002981" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:40.946076" elapsed="0.056905"/>
+</kw>
+<kw name="Preencher o campo CPF do Paciente com um cpf de um paciente não ativo" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.002981" level="INFO">Typing text '1097237328239' into text field 'name=cpf'.</msg>
+<arg>name=cpf</arg>
+<arg>${cpf_de_paciente_inativo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.002981" elapsed="0.195576"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:41.002981" elapsed="0.195576"/>
+</kw>
+<kw name="Preencher o campo Data da Consulta com uma data disponível" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.198557" level="INFO">Typing text '25112024' into text field 'name=data'.</msg>
+<arg>name=data</arg>
+<arg>${data_disponivel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.198557" elapsed="0.080970"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:41.198557" elapsed="0.080970"/>
+</kw>
+<kw name="Preencher o campo Hora da Consulta com um horário disponível" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.279527" level="INFO">Typing text '1000' into text field 'name=horario'.</msg>
+<arg>name=horario</arg>
+<arg>${horario_disponivel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.279527" elapsed="0.064656"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:41.279527" elapsed="0.064656"/>
+</kw>
+<kw name="Acionar o botão &quot;Confirmar&quot;" owner="clinica_here_agenda_do_medico_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.352466" level="INFO">Clicking element 'name=confirmar'.</msg>
+<arg>name=confirmar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.352466" elapsed="0.237253"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:41.352261" elapsed="0.238467"/>
+</kw>
+<kw name="Verificar se aparce a mensagem de erro &quot;Digite um CPF válido!&quot;" owner="clinica_here_agenda_do_medico_resources" source_name="Verificar se aparce a mensagem de erro &quot;${mensagem_de_erro}&quot;">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.638732" level="INFO">${mensagem} = Digite um CPF válido!</msg>
+<var>${mensagem}</var>
+<arg>css=section.section_invalido p</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.590728" elapsed="0.048004"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${mensagem}</arg>
+<arg>${mensagem_de_erro}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.638732" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:41.590728" elapsed="0.048004"/>
+</kw>
+<kw name="Fechar o navegador" owner="clinica_here_agenda_do_medico_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-15T11:15:41.939598" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.638732" elapsed="0.300866"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-15T11:15:41.939598" elapsed="2.156725"/>
+</kw>
+<status status="PASS" start="2024-10-15T11:15:41.638732" elapsed="2.457591"/>
+</kw>
+<doc>Esse teste verifica o campo cpf ao realizar o agendamento</doc>
+<tag>agendar_uma_consulta_sem_cpf</tag>
+<status status="PASS" start="2024-10-15T11:15:37.808723" elapsed="6.287600"/>
+</test>
+<doc>Esse teste suite testa o agendamento de consulta pela recepcionista</doc>
+<status status="PASS" start="2024-10-15T11:15:37.651223" elapsed="6.445100"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">agendar_uma_consulta_sem_cpf</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Clinica Here Agenda Do Medico Tests">Clinica Here Agenda Do Medico Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
