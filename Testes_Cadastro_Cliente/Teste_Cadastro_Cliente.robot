@@ -26,7 +26,7 @@ Caso de Teste 01 - Cadastro inválido de Cliente"
 
 Caso de Teste 02 - Cadastro válido do Cliente"
 	[Documentation]	Esse teste verifica o cadastro do cliente correto
-	[Tags]	site_principal
+	[Tags]	cadastro_valido_paciente
 	Acessar a home page do site Clinical Here
 	Digitar o cpf de uma recepcionista ativa no campo CPF
 	Digitar a senha de uma recepcionista ativa no campo Senha
