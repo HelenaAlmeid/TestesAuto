@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation	Essa suíte testa o site da Clinical Here
+Documentation	Essa test suite testa o site da Clinical Here
 Resource	Teste_Cadastro_resources.robot
 Test Setup	Abrir o navegador
 
