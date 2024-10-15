@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Esse caso de uso testa o Cadastro de Médico
+Documentation    Esse test suite testa o Cadastro de Médico
 Resource         clinica_here_cadastro_medico_resources.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador

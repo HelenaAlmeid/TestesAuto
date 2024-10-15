@@ -1,526 +1,278 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.4 on win32)" generated="20241015 10:26:55.879" rpa="false" schemaversion="4">
-<suite id="s1" name="Clinica Here Cadastro Medico Tests" source="C:\Users\helena.almeida\Documents\GitHub\TestesAuto\Testes do Cadastro Medico\clinica_here_cadastro_medico_tests.robot">
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-15T10:43:34.813948" rpa="false" schemaversion="5">
+<suite id="s1" name="Clinica Here Cadastro Medico Tests" source="C:\Users\melov\OneDrive\Área de Trabalho\Verificação e Validação\TestesAuto\Testes do Cadastro Medico\clinica_here_cadastro_medico_tests.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Cadastrar um médico com um crm já cadastrado" line="9">
-<kw name="Abrir o navegador" library="clinica_here_cadastro_medico_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<kw name="Abrir o navegador" owner="clinica_here_cadastro_medico_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:35.141762" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20241015 10:26:56.238" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20241015 10:26:56.238" endtime="20241015 10:26:58.390"/>
+<status status="PASS" start="2024-10-15T10:43:35.141762" elapsed="8.958864"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20241015 10:26:58.390" endtime="20241015 10:26:58.419"/>
+<status status="PASS" start="2024-10-15T10:43:44.100626" elapsed="0.040281"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:56.238" endtime="20241015 10:26:58.421"/>
+<status status="PASS" start="2024-10-15T10:43:35.141050" elapsed="8.999857"/>
 </kw>
-<kw name="Acessar a página de login do site" library="clinica_here_cadastro_medico_resources">
-<kw name="Go To" library="SeleniumLibrary">
+<kw name="Acessar a página de login do site" owner="clinica_here_cadastro_medico_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:44.140907" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20241015 10:26:58.421" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/'</msg>
-<status status="PASS" starttime="20241015 10:26:58.421" endtime="20241015 10:26:58.524"/>
+<status status="PASS" start="2024-10-15T10:43:44.140907" elapsed="0.084084"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:58.421" endtime="20241015 10:26:58.525"/>
+<status status="PASS" start="2024-10-15T10:43:44.140907" elapsed="0.084084"/>
 </kw>
-<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
+<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" owner="clinica_here_cadastro_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:44.224991" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<msg time="2024-10-15T10:43:44.498010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-15T10:43:44.498010" level="FAIL">Element with locator 'id=cpf' not found.</msg>
 <arg>id=cpf</arg>
 <arg>${CPF_ATIVO}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:58.527" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:26:58.526" endtime="20241015 10:26:58.631"/>
+<status status="FAIL" start="2024-10-15T10:43:44.224991" elapsed="0.282846">Element with locator 'id=cpf' not found.</status>
 </kw>
-<status status="PASS" starttime="20241015 10:26:58.525" endtime="20241015 10:26:58.631"/>
+<status status="FAIL" start="2024-10-15T10:43:44.224991" elapsed="0.282846">Element with locator 'id=cpf' not found.</status>
 </kw>
-<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=senha</arg>
-<arg>${SENHA_ATIVA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:58.633" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:26:58.632" endtime="20241015 10:26:58.700"/>
+<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.507837" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:58.631" endtime="20241015 10:26:58.700"/>
+<kw name="Acionar o botão &quot;Entrar&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<kw name="Acionar o botão &quot;Entrar&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=botao_login</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:58.702" level="INFO">Clicking element 'name=botao_login'.</msg>
-<status status="PASS" starttime="20241015 10:26:58.700" endtime="20241015 10:26:59.475"/>
+<kw name="Clicar no menu &quot;Cadastro de Médico&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:58.700" endtime="20241015 10:26:59.475"/>
+<kw name="Preencher o campo Nome completo com um nome válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<kw name="Clicar no menu &quot;Cadastro de Médico&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>${opcao_menu}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:59.477" level="INFO">Clicking link 'Cadastro de Médico'.</msg>
-<status status="PASS" starttime="20241015 10:26:59.477" endtime="20241015 10:26:59.600"/>
+<kw name="Preencher o campo CPF com um CPF válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:59.476" endtime="20241015 10:26:59.600"/>
+<kw name="Preencher o campo Data de Nascimento com uma data válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo Nome completo com um nome válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=nome</arg>
-<arg>${nome_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:59.602" level="INFO">Typing text 'Bianca Felícia de Fernandes' into text field 'id=nome'.</msg>
-<status status="PASS" starttime="20241015 10:26:59.601" endtime="20241015 10:26:59.690"/>
+<kw name="Preencher o campo CRM com um crm já cadastrado" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:59.600" endtime="20241015 10:26:59.690"/>
+<kw name="Preencher o campo Especialidade com uma especialidade válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo CPF com um CPF válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=cpf</arg>
-<arg>${cpf_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:59.691" level="INFO">Typing text '695.183.520-97' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:26:59.690" endtime="20241015 10:26:59.757"/>
+<kw name="Preencher o campo Senha com uma senha válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:59.690" endtime="20241015 10:26:59.757"/>
+<kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo Data de Nascimento com uma data válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=data</arg>
-<arg>${data_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:59.758" level="INFO">Typing text '25071980' into text field 'id=data'.</msg>
-<status status="PASS" starttime="20241015 10:26:59.758" endtime="20241015 10:26:59.818"/>
+<kw name="Acionar o botão &quot;Cadastrar&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:26:59.758" endtime="20241015 10:26:59.818"/>
+<kw name="Verificar se é exibida a mensagem de erro &quot;Esse CRM já foi cadastrado anteriormente!&quot;" owner="clinica_here_cadastro_medico_resources" source_name="Verificar se é exibida a mensagem de erro &quot;${mensagem_erro}&quot;">
+<status status="NOT RUN" start="2024-10-15T10:43:44.513857" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo CRM com um crm já cadastrado" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=crm</arg>
-<arg>${crm_repetido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:59.819" level="INFO">Typing text '5555555' into text field 'id=crm'.</msg>
-<status status="PASS" starttime="20241015 10:26:59.819" endtime="20241015 10:26:59.889"/>
-</kw>
-<status status="PASS" starttime="20241015 10:26:59.819" endtime="20241015 10:26:59.889"/>
-</kw>
-<kw name="Preencher o campo Especialidade com uma especialidade válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>id=especialidade</arg>
-<arg>${especialidade}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20241015 10:26:59.890" level="INFO">Selecting options from selection list 'id=especialidade' by value 1.</msg>
-<status status="PASS" starttime="20241015 10:26:59.889" endtime="20241015 10:26:59.957"/>
-</kw>
-<status status="PASS" starttime="20241015 10:26:59.889" endtime="20241015 10:26:59.957"/>
-</kw>
-<kw name="Preencher o campo Senha com uma senha válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=senha</arg>
-<arg>${senha_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:26:59.957" level="INFO">Typing text 'Senha02@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:26:59.957" endtime="20241015 10:27:00.027"/>
-</kw>
-<status status="PASS" starttime="20241015 10:26:59.957" endtime="20241015 10:27:00.027"/>
-</kw>
-<kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=confirmaSenha</arg>
-<arg>${senha_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:00.028" level="INFO">Typing text 'Senha02@' into text field 'id=confirmaSenha'.</msg>
-<status status="PASS" starttime="20241015 10:27:00.028" endtime="20241015 10:27:00.094"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:00.028" endtime="20241015 10:27:00.094"/>
-</kw>
-<kw name="Acionar o botão &quot;Cadastrar&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=Enviar</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:00.095" level="INFO">Clicking element 'id=Enviar'.</msg>
-<status status="PASS" starttime="20241015 10:27:00.094" endtime="20241015 10:27:00.201"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:00.094" endtime="20241015 10:27:00.201"/>
-</kw>
-<kw name="Verificar se é exibida a mensagem de erro &quot;Esse CRM já foi cadastrado anteriormente!&quot;" library="clinica_here_cadastro_medico_resources" sourcename="Verificar se é exibida a mensagem de erro &quot;${mensagem_erro}&quot;">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${mensagem}</var>
-<arg>css=section.section_invalido p</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:00.230" level="INFO">${mensagem} = Esse CRM já foi cadastrado anteriormente!</msg>
-<status status="PASS" starttime="20241015 10:27:00.202" endtime="20241015 10:27:00.230"/>
-</kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${mensagem}</arg>
-<arg>${mensagem_erro}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20241015 10:27:00.230" endtime="20241015 10:27:00.231"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:00.201" endtime="20241015 10:27:00.231"/>
-</kw>
-<kw name="Fechar o navegador" library="clinica_here_cadastro_medico_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<kw name="Fechar o navegador" owner="clinica_here_cadastro_medico_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:44.733172" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20241015 10:27:00.326" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20241015 10:27:00.232" endtime="20241015 10:27:00.326"/>
+<status status="PASS" start="2024-10-15T10:43:44.521873" elapsed="0.211299"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
+<kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20241015 10:27:00.326" endtime="20241015 10:27:02.905"/>
+<status status="PASS" start="2024-10-15T10:43:44.733172" elapsed="2.167037"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:00.231" endtime="20241015 10:27:02.905"/>
+<status status="PASS" start="2024-10-15T10:43:44.521873" elapsed="2.378336"/>
 </kw>
 <doc>Esse teste verifica a validação do campo crm ao realizar o cadastro</doc>
 <tag>cadastro_medico_sem_crm</tag>
-<status status="PASS" starttime="20241015 10:26:56.238" endtime="20241015 10:27:02.905"/>
+<status status="FAIL" start="2024-10-15T10:43:35.133315" elapsed="11.766894">Element with locator 'id=cpf' not found.</status>
 </test>
 <test id="s1-t2" name="Caso de Teste 02 - Cadastrar um médico com CPF ainda não cadastrado" line="27">
-<kw name="Abrir o navegador" library="clinica_here_cadastro_medico_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<kw name="Abrir o navegador" owner="clinica_here_cadastro_medico_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:46.901993" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20241015 10:27:02.905" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20241015 10:27:02.905" endtime="20241015 10:27:04.943"/>
+<status status="PASS" start="2024-10-15T10:43:46.901993" elapsed="1.578990"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20241015 10:27:04.943" endtime="20241015 10:27:04.976"/>
+<status status="PASS" start="2024-10-15T10:43:48.480983" elapsed="0.024004"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:02.905" endtime="20241015 10:27:04.976"/>
+<status status="PASS" start="2024-10-15T10:43:46.901993" elapsed="1.602994"/>
 </kw>
-<kw name="Acessar a página de login do site" library="clinica_here_cadastro_medico_resources">
-<kw name="Go To" library="SeleniumLibrary">
+<kw name="Acessar a página de login do site" owner="clinica_here_cadastro_medico_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:48.504987" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20241015 10:27:04.976" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/'</msg>
-<status status="PASS" starttime="20241015 10:27:04.976" endtime="20241015 10:27:05.183"/>
+<status status="PASS" start="2024-10-15T10:43:48.504987" elapsed="0.088139"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:04.976" endtime="20241015 10:27:05.183"/>
+<status status="PASS" start="2024-10-15T10:43:48.504987" elapsed="0.088139"/>
 </kw>
-<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
+<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" owner="clinica_here_cadastro_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:48.593126" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<msg time="2024-10-15T10:43:48.836012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-15T10:43:48.836012" level="FAIL">Element with locator 'id=cpf' not found.</msg>
 <arg>id=cpf</arg>
 <arg>${CPF_ATIVO}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:05.185" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:27:05.184" endtime="20241015 10:27:05.291"/>
+<status status="FAIL" start="2024-10-15T10:43:48.593126" elapsed="0.242886">Element with locator 'id=cpf' not found.</status>
 </kw>
-<status status="PASS" starttime="20241015 10:27:05.183" endtime="20241015 10:27:05.291"/>
+<status status="FAIL" start="2024-10-15T10:43:48.593126" elapsed="0.242886">Element with locator 'id=cpf' not found.</status>
 </kw>
-<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=senha</arg>
-<arg>${SENHA_ATIVA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:05.293" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:27:05.291" endtime="20241015 10:27:05.358"/>
+<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:05.291" endtime="20241015 10:27:05.358"/>
+<kw name="Acionar o botão &quot;Entrar&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<kw name="Acionar o botão &quot;Entrar&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=botao_login</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:05.358" level="INFO">Clicking element 'name=botao_login'.</msg>
-<status status="PASS" starttime="20241015 10:27:05.358" endtime="20241015 10:27:06.135"/>
+<kw name="Clicar no menu &quot;Cadastro de Médico&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:05.358" endtime="20241015 10:27:06.135"/>
+<kw name="Preencher o campo Nome completo com um nome válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<kw name="Clicar no menu &quot;Cadastro de Médico&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>${opcao_menu}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.136" level="INFO">Clicking link 'Cadastro de Médico'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.136" endtime="20241015 10:27:06.229"/>
+<kw name="Preencher o campo CPF com um CPF válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:06.136" endtime="20241015 10:27:06.230"/>
+<kw name="Preencher o campo Data de Nascimento com uma data válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo Nome completo com um nome válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=nome</arg>
-<arg>${nome_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.231" level="INFO">Typing text 'Bianca Felícia de Fernandes' into text field 'id=nome'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.230" endtime="20241015 10:27:06.318"/>
+<kw name="Preencher o campo CRM com um crm válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:06.230" endtime="20241015 10:27:06.318"/>
+<kw name="Preencher o campo Especialidade com uma especialidade válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo CPF com um CPF válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=cpf</arg>
-<arg>${cpf_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.319" level="INFO">Typing text '695.183.520-97' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.319" endtime="20241015 10:27:06.385"/>
+<kw name="Preencher o campo Senha com uma senha válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:06.319" endtime="20241015 10:27:06.385"/>
+<kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo Data de Nascimento com uma data válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=data</arg>
-<arg>${data_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.385" level="INFO">Typing text '25071980' into text field 'id=data'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.385" endtime="20241015 10:27:06.441"/>
+<kw name="Acionar o botão &quot;Cadastrar&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:06.385" endtime="20241015 10:27:06.441"/>
+<kw name="Verificar se é exibida a mensagem de confirmação &quot;O médico foi cadastrado com sucesso em nosso sistema.&quot;" owner="clinica_here_cadastro_medico_resources" source_name="Verificar se é exibida a mensagem de confirmação &quot;${mensagem_de_confirmacao}&quot;">
+<status status="NOT RUN" start="2024-10-15T10:43:48.836012" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo CRM com um crm válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=crm</arg>
-<arg>${crm_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.443" level="INFO">Typing text '1919190' into text field 'id=crm'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.442" endtime="20241015 10:27:06.506"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:06.442" endtime="20241015 10:27:06.506"/>
-</kw>
-<kw name="Preencher o campo Especialidade com uma especialidade válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>id=especialidade</arg>
-<arg>${especialidade}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20241015 10:27:06.508" level="INFO">Selecting options from selection list 'id=especialidade' by value 1.</msg>
-<status status="PASS" starttime="20241015 10:27:06.507" endtime="20241015 10:27:06.569"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:06.506" endtime="20241015 10:27:06.569"/>
-</kw>
-<kw name="Preencher o campo Senha com uma senha válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=senha</arg>
-<arg>${senha_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.569" level="INFO">Typing text 'Senha02@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.569" endtime="20241015 10:27:06.631"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:06.569" endtime="20241015 10:27:06.632"/>
-</kw>
-<kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=confirmaSenha</arg>
-<arg>${senha_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.632" level="INFO">Typing text 'Senha02@' into text field 'id=confirmaSenha'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.632" endtime="20241015 10:27:06.699"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:06.632" endtime="20241015 10:27:06.699"/>
-</kw>
-<kw name="Acionar o botão &quot;Cadastrar&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=Enviar</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.700" level="INFO">Clicking element 'id=Enviar'.</msg>
-<status status="PASS" starttime="20241015 10:27:06.700" endtime="20241015 10:27:06.826"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:06.699" endtime="20241015 10:27:06.826"/>
-</kw>
-<kw name="Verificar se é exibida a mensagem de confirmação &quot;O médico foi cadastrado com sucesso em nosso sistema.&quot;" library="clinica_here_cadastro_medico_resources" sourcename="Verificar se é exibida a mensagem de confirmação &quot;${mensagem_de_confirmacao}&quot;">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${mensagem}</var>
-<arg>css=section.success-message p</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:06.851" level="INFO">${mensagem} = O médico foi cadastrado com sucesso em nosso sistema.</msg>
-<status status="PASS" starttime="20241015 10:27:06.826" endtime="20241015 10:27:06.851"/>
-</kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${mensagem}</arg>
-<arg>${mensagem_de_confirmacao}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20241015 10:27:06.851" endtime="20241015 10:27:06.852"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:06.826" endtime="20241015 10:27:06.852"/>
-</kw>
-<kw name="Fechar o navegador" library="clinica_here_cadastro_medico_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<kw name="Fechar o navegador" owner="clinica_here_cadastro_medico_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:49.063492" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20241015 10:27:06.948" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20241015 10:27:06.853" endtime="20241015 10:27:06.948"/>
+<status status="PASS" start="2024-10-15T10:43:48.836012" elapsed="0.227480"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
+<kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20241015 10:27:06.948" endtime="20241015 10:27:09.530"/>
+<status status="PASS" start="2024-10-15T10:43:49.063492" elapsed="2.150171"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:06.852" endtime="20241015 10:27:09.530"/>
+<status status="PASS" start="2024-10-15T10:43:48.836012" elapsed="2.377651"/>
 </kw>
 <doc>Esse teste verifica a validação do campo CPF ao realizar o cadastro</doc>
 <tag>cadastro_medico_com_cpf_valido</tag>
-<status status="PASS" starttime="20241015 10:27:02.905" endtime="20241015 10:27:09.530"/>
+<status status="FAIL" start="2024-10-15T10:43:46.901993" elapsed="4.311670">Element with locator 'id=cpf' not found.</status>
 </test>
 <test id="s1-t3" name="Caso de teste 03 - Cadastrar um médico com CPF já cadastrado" line="45">
-<kw name="Abrir o navegador" library="clinica_here_cadastro_medico_resources" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<kw name="Abrir o navegador" owner="clinica_here_cadastro_medico_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:51.216471" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20241015 10:27:09.530" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20241015 10:27:09.530" endtime="20241015 10:27:11.576"/>
+<status status="PASS" start="2024-10-15T10:43:51.216471" elapsed="1.607496"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20241015 10:27:11.576" endtime="20241015 10:27:11.605"/>
+<status status="PASS" start="2024-10-15T10:43:52.823967" elapsed="0.046795"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:09.530" endtime="20241015 10:27:11.605"/>
+<status status="PASS" start="2024-10-15T10:43:51.216471" elapsed="1.654291"/>
 </kw>
-<kw name="Acessar a página de login do site" library="clinica_here_cadastro_medico_resources">
-<kw name="Go To" library="SeleniumLibrary">
+<kw name="Acessar a página de login do site" owner="clinica_here_cadastro_medico_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:52.872452" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20241015 10:27:11.605" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/'</msg>
-<status status="PASS" starttime="20241015 10:27:11.605" endtime="20241015 10:27:11.770"/>
+<status status="PASS" start="2024-10-15T10:43:52.872452" elapsed="0.050418"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:11.605" endtime="20241015 10:27:11.770"/>
+<status status="PASS" start="2024-10-15T10:43:52.872452" elapsed="0.050418"/>
 </kw>
-<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
+<kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" owner="clinica_here_cadastro_medico_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:52.922870" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<msg time="2024-10-15T10:43:53.141354" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-15T10:43:53.141354" level="FAIL">Element with locator 'id=cpf' not found.</msg>
 <arg>id=cpf</arg>
 <arg>${CPF_ATIVO}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:11.772" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:27:11.771" endtime="20241015 10:27:11.873"/>
+<status status="FAIL" start="2024-10-15T10:43:52.922870" elapsed="0.218484">Element with locator 'id=cpf' not found.</status>
 </kw>
-<status status="PASS" starttime="20241015 10:27:11.771" endtime="20241015 10:27:11.873"/>
+<status status="FAIL" start="2024-10-15T10:43:52.922870" elapsed="0.218484">Element with locator 'id=cpf' not found.</status>
 </kw>
-<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=senha</arg>
-<arg>${SENHA_ATIVA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:11.873" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:27:11.873" endtime="20241015 10:27:11.937"/>
+<kw name="Digitar a senha de uma recepcionista ativa no campo Senha" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.141354" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:11.873" endtime="20241015 10:27:11.937"/>
+<kw name="Acionar o botão &quot;Entrar&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.145781" elapsed="0.000000"/>
 </kw>
-<kw name="Acionar o botão &quot;Entrar&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=botao_login</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:11.938" level="INFO">Clicking element 'name=botao_login'.</msg>
-<status status="PASS" starttime="20241015 10:27:11.938" endtime="20241015 10:27:12.601"/>
+<kw name="Clicar no menu &quot;Cadastro de Médico&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.147474" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:11.938" endtime="20241015 10:27:12.601"/>
+<kw name="Preencher o campo Nome completo com um nome válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.147474" elapsed="0.000000"/>
 </kw>
-<kw name="Clicar no menu &quot;Cadastro de Médico&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>${opcao_menu}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:12.601" level="INFO">Clicking link 'Cadastro de Médico'.</msg>
-<status status="PASS" starttime="20241015 10:27:12.601" endtime="20241015 10:27:12.707"/>
+<kw name="Preencher o campo CPF com um CPF já cadastrado" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.148564" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:12.601" endtime="20241015 10:27:12.707"/>
+<kw name="Preencher o campo CRM com um crm válido" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.148564" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo Nome completo com um nome válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=nome</arg>
-<arg>${nome_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:12.708" level="INFO">Typing text 'Bianca Felícia de Fernandes' into text field 'id=nome'.</msg>
-<status status="PASS" starttime="20241015 10:27:12.708" endtime="20241015 10:27:12.795"/>
+<kw name="Preencher o campo Especialidade com uma especialidade válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.148564" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:12.707" endtime="20241015 10:27:12.795"/>
+<kw name="Preencher o campo Senha com uma senha válida" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.149576" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo CPF com um CPF já cadastrado" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=cpf</arg>
-<arg>${CPF_ATIVO}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:12.796" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:27:12.796" endtime="20241015 10:27:12.863"/>
+<kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.149576" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:12.796" endtime="20241015 10:27:12.863"/>
+<kw name="Acionar o botão &quot;Cadastrar&quot;" owner="clinica_here_cadastro_medico_resources">
+<status status="NOT RUN" start="2024-10-15T10:43:53.149576" elapsed="0.000000"/>
 </kw>
-<kw name="Preencher o campo CRM com um crm válido" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=crm</arg>
-<arg>${crm_valido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:12.864" level="INFO">Typing text '1919190' into text field 'id=crm'.</msg>
-<status status="PASS" starttime="20241015 10:27:12.864" endtime="20241015 10:27:12.931"/>
+<kw name="Verificar se é exibida a mensagem de erro do CPF repetido &quot;Esse CPF já foi cadastrado anteriormente!&quot;" owner="clinica_here_cadastro_medico_resources" source_name="Verificar se é exibida a mensagem de erro do CPF repetido &quot;${mensagem_erro_cpf}&quot;">
+<status status="NOT RUN" start="2024-10-15T10:43:53.150773" elapsed="0.000000"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:12.863" endtime="20241015 10:27:12.931"/>
-</kw>
-<kw name="Preencher o campo Especialidade com uma especialidade válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>id=especialidade</arg>
-<arg>${especialidade}</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20241015 10:27:12.932" level="INFO">Selecting options from selection list 'id=especialidade' by value 1.</msg>
-<status status="PASS" starttime="20241015 10:27:12.932" endtime="20241015 10:27:13.012"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:12.931" endtime="20241015 10:27:13.012"/>
-</kw>
-<kw name="Preencher o campo Senha com uma senha válida" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=senha</arg>
-<arg>${senha_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:13.013" level="INFO">Typing text 'Senha02@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:27:13.013" endtime="20241015 10:27:13.087"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:13.012" endtime="20241015 10:27:13.087"/>
-</kw>
-<kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" library="clinica_here_cadastro_medico_resources">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=confirmaSenha</arg>
-<arg>${senha_valida}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:13.088" level="INFO">Typing text 'Senha02@' into text field 'id=confirmaSenha'.</msg>
-<status status="PASS" starttime="20241015 10:27:13.088" endtime="20241015 10:27:13.154"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:13.088" endtime="20241015 10:27:13.154"/>
-</kw>
-<kw name="Acionar o botão &quot;Cadastrar&quot;" library="clinica_here_cadastro_medico_resources">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=Enviar</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:13.155" level="INFO">Clicking element 'id=Enviar'.</msg>
-<status status="PASS" starttime="20241015 10:27:13.155" endtime="20241015 10:27:13.220"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:13.154" endtime="20241015 10:27:13.220"/>
-</kw>
-<kw name="Verificar se é exibida a mensagem de erro do CPF repetido &quot;Esse CPF já foi cadastrado anteriormente!&quot;" library="clinica_here_cadastro_medico_resources" sourcename="Verificar se é exibida a mensagem de erro do CPF repetido &quot;${mensagem_erro_cpf}&quot;">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${mensagem}</var>
-<arg>css=section.section_invalido p</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:27:13.256" level="INFO">${mensagem} = Esse CPF já foi cadastrado anteriormente!</msg>
-<status status="PASS" starttime="20241015 10:27:13.221" endtime="20241015 10:27:13.256"/>
-</kw>
-<kw name="Should Be Equal As Strings" library="BuiltIn">
-<arg>${mensagem}</arg>
-<arg>${mensagem_erro_cpf}</arg>
-<doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20241015 10:27:13.256" endtime="20241015 10:27:13.256"/>
-</kw>
-<status status="PASS" starttime="20241015 10:27:13.221" endtime="20241015 10:27:13.256"/>
-</kw>
-<kw name="Fechar o navegador" library="clinica_here_cadastro_medico_resources" type="TEARDOWN">
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<kw name="Fechar o navegador" owner="clinica_here_cadastro_medico_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-15T10:43:53.366787" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20241015 10:27:13.357" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20241015 10:27:13.257" endtime="20241015 10:27:13.357"/>
+<status status="PASS" start="2024-10-15T10:43:53.150773" elapsed="0.216014"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
+<kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20241015 10:27:13.357" endtime="20241015 10:27:15.925"/>
+<status status="PASS" start="2024-10-15T10:43:53.366787" elapsed="2.133190"/>
 </kw>
-<status status="PASS" starttime="20241015 10:27:13.257" endtime="20241015 10:27:15.925"/>
+<status status="PASS" start="2024-10-15T10:43:53.150773" elapsed="2.349204"/>
 </kw>
 <doc>Esse teste verifica a validação do campo CPF ao realizar o cadastro</doc>
 <tag>cadastro_medico_com_cpf_repetido</tag>
-<status status="PASS" starttime="20241015 10:27:09.530" endtime="20241015 10:27:15.925"/>
+<status status="FAIL" start="2024-10-15T10:43:51.216471" elapsed="4.283506">Element with locator 'id=cpf' not found.</status>
 </test>
-<doc>Esse caso de uso testa o Cadastro de Médico</doc>
-<status status="PASS" starttime="20241015 10:26:55.894" endtime="20241015 10:27:15.925"/>
+<doc>Esse test suite testa o Cadastro de Médico</doc>
+<status status="FAIL" start="2024-10-15T10:43:34.813948" elapsed="20.686029"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">cadastro_medico_com_cpf_repetido</stat>
-<stat pass="1" fail="0" skip="0">cadastro_medico_com_cpf_valido</stat>
-<stat pass="1" fail="0" skip="0">cadastro_medico_sem_crm</stat>
+<stat pass="0" fail="1" skip="0">cadastro_medico_com_cpf_repetido</stat>
+<stat pass="0" fail="1" skip="0">cadastro_medico_com_cpf_valido</stat>
+<stat pass="0" fail="1" skip="0">cadastro_medico_sem_crm</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Clinica Here Cadastro Medico Tests">Clinica Here Cadastro Medico Tests</stat>
+<stat pass="0" fail="3" skip="0" id="s1" name="Clinica Here Cadastro Medico Tests">Clinica Here Cadastro Medico Tests</stat>
 </suite>
 </statistics>
 <errors>
