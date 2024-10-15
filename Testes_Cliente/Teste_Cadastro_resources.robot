@@ -17,7 +17,7 @@ ${peso}	55
 ${telefone}	343234323
 ${genero}	Masculino
 ${mensagem_erro}	Esse CPF já foi cadastrado anteriormente!
-${mensagem_valida}	'O paciente foi cadastrado com sucesso em nosso sistema.'
+${mensagem_valida}	O paciente foi cadastrado com sucesso em nosso sistema.
 
 
 *** Keywords ***
@@ -72,17 +72,19 @@ Preencher o campo Telefone corretamente
 Preencher o campo Gênero com um gênero válido
 	Select From List By Value	id=sexo	${genero}
 
-Acionar o botão "Cadastrar"
-	Click Element	id=Enviar
-
-Verificar se é exibida a mensagem de erro "${mensagem_erro}"
-	${mensagem}=	Get Text	css=section.section_invalido p
-	Should Be Equal As Strings	${mensagem}	${mensagem_erro}
-
 Preencher o campo CPF com um CPF válido
 	Input Text	id=cpf	${CPF_valido}
 
+Acionar o botão "Cadastrar"
+	Click Element	id=Enviar
+
 Verificar se é exibida a mensagem de confirmação "${mensagem_valida}"
-	${mensagem_v}=	Get Text	css=section.sucess-message p
-	Should Be Equal As Strings	${mensagem_v}	${mensagem_valida}
+	${men}=	Get Text	css=section.success-message p
+	Should Be Equal As Strings	${men}	${mensagem_valida}
+
+Verificar se é exibida a mensagem de erro "${mensagem_erro}"
+	${men}=	Get Text	css=section.section_invalido p
+	Should Be Equal As Strings	${men}	${mensagem_erro}
+
+
 

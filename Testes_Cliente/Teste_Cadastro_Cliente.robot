@@ -42,4 +42,4 @@ Caso de Teste 02 - Cadastro válido do Cliente"
 	Preencher o campo Telefone corretamente
 	Preencher o campo Gênero com um gênero válido
 	Acionar o botão "Cadastrar"
-	Verificar se é exibida a mensagem de erro "${mensagem}"
+	Verificar se é exibida a mensagem de confirmação "${mensagem_valida}"
