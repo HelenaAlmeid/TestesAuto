@@ -3,7 +3,7 @@ Library	SeleniumLibrary
 
 *** Variables ***
 ${BROWSER}	chrome 
-${URL}		http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/
+${URL}		http://localhost/ExperienciaCriativa/parte-1/php/cadastromed.php
 ${CPF_ATIVO}	431.628.700-11
 ${SENHA_ATIVA}		Senha01@
 ${opcao_menu}    Cadastro de Médico
