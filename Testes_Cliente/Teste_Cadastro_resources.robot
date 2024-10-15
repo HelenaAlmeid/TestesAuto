@@ -9,6 +9,7 @@ ${SENHA}	Senha01@
 ${opcao_menu}	Cadastro de Paciente
 ${nome_valido}	José Maria dos Reis
 ${CPF_invalido}	431.628.700-11
+${CPF_valido}	892.107.420-10
 ${data_nascimento}	11052003
 ${Senha}	Senha03@
 ${altura}	1.70
@@ -16,6 +17,8 @@ ${peso}	55
 ${telefone}	343234323
 ${genero}	Masculino
 ${mensagem_erro}	Esse CPF já foi cadastrado anteriormente!
+${mensagem_valida}	'O paciente foi cadastrado com sucesso em nosso sistema.'
+
 
 *** Keywords ***
 Abrir o navegador
@@ -46,7 +49,7 @@ Preencher o campo Nome completo com um nome válido
 	Input Text	id=nome	${nome_valido}
 
 Preencher o campo CPF com um CPF inválido
-	Input Text	id=cpf	${cpf_invalido}
+	Input Text	id=cpf	${CPF_invalido}
 
 Preencher o campo Data de Nascimento com uma data válida
 	Input Text	id=data	${data_nascimento}
@@ -75,3 +78,11 @@ Acionar o botão "Cadastrar"
 Verificar se é exibida a mensagem de erro "${mensagem_erro}"
 	${mensagem}=	Get Text	css=section.section_invalido p
 	Should Be Equal As Strings	${mensagem}	${mensagem_erro}
+
+Preencher o campo CPF com um CPF válido
+	Input Text	id=cpf	${CPF_valido}
+
+Verificar se é exibida a mensagem de confirmação "${mensagem_valida}"
+	${mensagem_v}=	Get Text	css=section.sucess-message p
+	Should Be Equal As Strings	${mensagem_v}	${mensagem_valida}
+
