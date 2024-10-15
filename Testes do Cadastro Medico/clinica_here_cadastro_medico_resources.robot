@@ -3,7 +3,7 @@ Library	SeleniumLibrary
 
 *** Variables ***
 ${BROWSER}	chrome 
-${URL}		http://localhost/ExperienciaCriativa/parte-1/php/
+${URL}		http://localhost/ExperienciaCriativa/ExperienciaCriativa/parte-1/php/
 ${CPF_ATIVO}	431.628.700-11
 ${SENHA_ATIVA}		Senha01@
 ${opcao_menu}    Cadastro de Médico
@@ -16,7 +16,7 @@ ${especialidade}    1
 ${senha_valida}    Senha02@
 ${mensagem_erro}    Esse CRM já foi cadastrado anteriormente!
 ${mensagem_de_confirmacao}	O médico foi cadastrado com sucesso em nosso sistema.
-${mensagem_erro_cpf}	Esse CPF já foi cadastrado anteriormente!
+${mensagem_erro_cpf}	'Esse CPF já foi cadastrado anteriormente!'
 
 
 
