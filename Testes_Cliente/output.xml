@@ -1,368 +1,368 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.4 on win32)" generated="20241015 10:52:48.139" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.4 on win32)" generated="20241015 11:07:02.810" rpa="false" schemaversion="4">
 <suite id="s1" name="Teste Cadastro Cliente" source="C:\xampp\htdocs\TestesAuto\Testes_Cliente\Teste_Cadastro_Cliente.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso site da Clinical Here&quot;" line="7">
 <kw name="Abrir o navegador" library="Teste_Cadastro_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20241015 10:52:48.515" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20241015 10:52:48.515" endtime="20241015 10:52:50.602"/>
+<msg timestamp="20241015 11:07:03.901" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20241015 11:07:03.901" endtime="20241015 11:07:08.187"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20241015 10:52:50.602" endtime="20241015 10:52:50.621"/>
+<status status="PASS" starttime="20241015 11:07:08.188" endtime="20241015 11:07:08.226"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:48.515" endtime="20241015 10:52:50.621"/>
+<status status="PASS" starttime="20241015 11:07:03.900" endtime="20241015 11:07:08.226"/>
 </kw>
 <kw name="Acessar a home page do site Clinical Here" library="Teste_Cadastro_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20241015 10:52:50.621" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/parte-1/php/'</msg>
-<status status="PASS" starttime="20241015 10:52:50.621" endtime="20241015 10:52:50.702"/>
+<msg timestamp="20241015 11:07:08.228" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/parte-1/php/'</msg>
+<status status="PASS" starttime="20241015 11:07:08.227" endtime="20241015 11:07:08.545"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20241015 10:52:50.929" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20241015 10:52:50.702" endtime="20241015 10:52:50.929"/>
+<msg timestamp="20241015 11:07:08.992" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20241015 11:07:08.545" endtime="20241015 11:07:08.992"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:50.621" endtime="20241015 10:52:50.929"/>
+<status status="PASS" starttime="20241015 11:07:08.226" endtime="20241015 11:07:08.993"/>
 </kw>
 <kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=cpf</arg>
 <arg>${CPF}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:50.929" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:52:50.929" endtime="20241015 10:52:50.998"/>
+<msg timestamp="20241015 11:07:08.995" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<status status="PASS" starttime="20241015 11:07:08.994" endtime="20241015 11:07:09.255"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:50.929" endtime="20241015 10:52:50.998"/>
+<status status="PASS" starttime="20241015 11:07:08.993" endtime="20241015 11:07:09.255"/>
 </kw>
 <kw name="Digitar a senha de uma recepcionista ativa no campo Senha" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=senha</arg>
 <arg>${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:50.998" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:52:50.998" endtime="20241015 10:52:51.073"/>
+<msg timestamp="20241015 11:07:09.258" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
+<status status="PASS" starttime="20241015 11:07:09.257" endtime="20241015 11:07:09.375"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:50.998" endtime="20241015 10:52:51.073"/>
+<status status="PASS" starttime="20241015 11:07:09.257" endtime="20241015 11:07:09.375"/>
 </kw>
 <kw name="Acionar o botão &quot;Entrar&quot;" library="Teste_Cadastro_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>name=botao_login</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:51.073" level="INFO">Clicking element 'name=botao_login'.</msg>
-<status status="PASS" starttime="20241015 10:52:51.073" endtime="20241015 10:52:51.774"/>
+<msg timestamp="20241015 11:07:09.376" level="INFO">Clicking element 'name=botao_login'.</msg>
+<status status="PASS" starttime="20241015 11:07:09.376" endtime="20241015 11:07:10.538"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:51.073" endtime="20241015 10:52:51.774"/>
+<status status="PASS" starttime="20241015 11:07:09.375" endtime="20241015 11:07:10.538"/>
 </kw>
 <kw name="Clicar no menu &quot;Cadastro de Paciente&quot;" library="Teste_Cadastro_resources">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${opcao_menu}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:51.774" level="INFO">Clicking link 'Cadastro de Paciente'.</msg>
-<status status="PASS" starttime="20241015 10:52:51.774" endtime="20241015 10:52:51.913"/>
+<msg timestamp="20241015 11:07:10.539" level="INFO">Clicking link 'Cadastro de Paciente'.</msg>
+<status status="PASS" starttime="20241015 11:07:10.539" endtime="20241015 11:07:10.952"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:51.774" endtime="20241015 10:52:51.913"/>
+<status status="PASS" starttime="20241015 11:07:10.538" endtime="20241015 11:07:10.952"/>
 </kw>
 <kw name="Preencher o campo Nome completo com um nome válido" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=nome</arg>
 <arg>${nome_valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:51.915" level="INFO">Typing text 'José Maria dos Reis' into text field 'id=nome'.</msg>
-<status status="PASS" starttime="20241015 10:52:51.913" endtime="20241015 10:52:52.018"/>
+<msg timestamp="20241015 11:07:10.959" level="INFO">Typing text 'José Maria dos Reis' into text field 'id=nome'.</msg>
+<status status="PASS" starttime="20241015 11:07:10.957" endtime="20241015 11:07:11.400"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:51.913" endtime="20241015 10:52:52.018"/>
+<status status="PASS" starttime="20241015 11:07:10.955" endtime="20241015 11:07:11.400"/>
 </kw>
 <kw name="Preencher o campo CPF com um CPF inválido" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=cpf</arg>
 <arg>${CPF_invalido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.019" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.019" endtime="20241015 10:52:52.067"/>
+<msg timestamp="20241015 11:07:11.404" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<status status="PASS" starttime="20241015 11:07:11.403" endtime="20241015 11:07:11.723"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.018" endtime="20241015 10:52:52.067"/>
+<status status="PASS" starttime="20241015 11:07:11.402" endtime="20241015 11:07:11.723"/>
 </kw>
 <kw name="Preencher o campo Data de Nascimento com uma data válida" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=data</arg>
 <arg>${data_nascimento}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.081" level="INFO">Typing text '11052003' into text field 'id=data'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.067" endtime="20241015 10:52:52.133"/>
+<msg timestamp="20241015 11:07:11.728" level="INFO">Typing text '11052003' into text field 'id=data'.</msg>
+<status status="PASS" starttime="20241015 11:07:11.726" endtime="20241015 11:07:11.872"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.067" endtime="20241015 10:52:52.133"/>
+<status status="PASS" starttime="20241015 11:07:11.725" endtime="20241015 11:07:11.872"/>
 </kw>
 <kw name="Preencher o campo Senha com uma senha válida" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=Senha</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.133" level="INFO">Typing text 'Senha01@' into text field 'id=Senha'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.133" endtime="20241015 10:52:52.206"/>
+<msg timestamp="20241015 11:07:11.874" level="INFO">Typing text 'Senha01@' into text field 'id=Senha'.</msg>
+<status status="PASS" starttime="20241015 11:07:11.873" endtime="20241015 11:07:12.075"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.133" endtime="20241015 10:52:52.206"/>
+<status status="PASS" starttime="20241015 11:07:11.873" endtime="20241015 11:07:12.075"/>
 </kw>
 <kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=confirmaSenha</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.207" level="INFO">Typing text 'Senha01@' into text field 'id=confirmaSenha'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.207" endtime="20241015 10:52:52.268"/>
+<msg timestamp="20241015 11:07:12.079" level="INFO">Typing text 'Senha01@' into text field 'id=confirmaSenha'.</msg>
+<status status="PASS" starttime="20241015 11:07:12.077" endtime="20241015 11:07:12.302"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.206" endtime="20241015 10:52:52.268"/>
+<status status="PASS" starttime="20241015 11:07:12.076" endtime="20241015 11:07:12.302"/>
 </kw>
 <kw name="Preencher o campo Altura corretamente" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=alt</arg>
 <arg>${altura}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.269" level="INFO">Typing text '1.70' into text field 'id=alt'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.269" endtime="20241015 10:52:52.331"/>
+<msg timestamp="20241015 11:07:12.302" level="INFO">Typing text '1.70' into text field 'id=alt'.</msg>
+<status status="PASS" starttime="20241015 11:07:12.302" endtime="20241015 11:07:12.457"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.268" endtime="20241015 10:52:52.331"/>
+<status status="PASS" starttime="20241015 11:07:12.302" endtime="20241015 11:07:12.457"/>
 </kw>
 <kw name="Preencher o campo Peso corretamente" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=pes</arg>
 <arg>${peso}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.331" level="INFO">Typing text '55' into text field 'id=pes'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.331" endtime="20241015 10:52:52.383"/>
+<msg timestamp="20241015 11:07:12.458" level="INFO">Typing text '55' into text field 'id=pes'.</msg>
+<status status="PASS" starttime="20241015 11:07:12.458" endtime="20241015 11:07:12.682"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.331" endtime="20241015 10:52:52.383"/>
+<status status="PASS" starttime="20241015 11:07:12.457" endtime="20241015 11:07:12.683"/>
 </kw>
 <kw name="Preencher o campo Telefone corretamente" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=tel</arg>
 <arg>${telefone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.383" level="INFO">Typing text '343234323' into text field 'id=tel'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.383" endtime="20241015 10:52:52.450"/>
+<msg timestamp="20241015 11:07:12.683" level="INFO">Typing text '343234323' into text field 'id=tel'.</msg>
+<status status="PASS" starttime="20241015 11:07:12.683" endtime="20241015 11:07:12.905"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.383" endtime="20241015 10:52:52.450"/>
+<status status="PASS" starttime="20241015 11:07:12.683" endtime="20241015 11:07:12.905"/>
 </kw>
 <kw name="Preencher o campo Gênero com um gênero válido" library="Teste_Cadastro_resources">
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>id=sexo</arg>
 <arg>${genero}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20241015 10:52:52.450" level="INFO">Selecting options from selection list 'id=sexo' by value Masculino.</msg>
-<status status="PASS" starttime="20241015 10:52:52.450" endtime="20241015 10:52:52.521"/>
+<msg timestamp="20241015 11:07:12.908" level="INFO">Selecting options from selection list 'id=sexo' by value Masculino.</msg>
+<status status="PASS" starttime="20241015 11:07:12.907" endtime="20241015 11:07:13.122"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.450" endtime="20241015 10:52:52.521"/>
+<status status="PASS" starttime="20241015 11:07:12.907" endtime="20241015 11:07:13.122"/>
 </kw>
 <kw name="Acionar o botão &quot;Cadastrar&quot;" library="Teste_Cadastro_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=Enviar</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.521" level="INFO">Clicking element 'id=Enviar'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.521" endtime="20241015 10:52:52.591"/>
+<msg timestamp="20241015 11:07:13.122" level="INFO">Clicking element 'id=Enviar'.</msg>
+<status status="PASS" starttime="20241015 11:07:13.122" endtime="20241015 11:07:13.391"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.521" endtime="20241015 10:52:52.591"/>
+<status status="PASS" starttime="20241015 11:07:13.122" endtime="20241015 11:07:13.391"/>
 </kw>
 <kw name="Verificar se é exibida a mensagem de erro &quot;${mensagem_erro}&quot;" library="Teste_Cadastro_resources" sourcename="Verificar se é exibida a mensagem de erro &quot;${mensagem_erro}&quot;">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${mensagem}</var>
 <arg>css=section.section_invalido p</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:52.616" level="INFO">${mensagem} = Esse CPF já foi cadastrado anteriormente!</msg>
-<status status="PASS" starttime="20241015 10:52:52.591" endtime="20241015 10:52:52.616"/>
+<msg timestamp="20241015 11:07:13.564" level="INFO">${mensagem} = Esse CPF já foi cadastrado anteriormente!</msg>
+<status status="PASS" starttime="20241015 11:07:13.395" endtime="20241015 11:07:13.564"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${mensagem}</arg>
 <arg>${mensagem_erro}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20241015 10:52:52.616" endtime="20241015 10:52:52.616"/>
+<status status="PASS" starttime="20241015 11:07:13.564" endtime="20241015 11:07:13.564"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.591" endtime="20241015 10:52:52.616"/>
+<status status="PASS" starttime="20241015 11:07:13.393" endtime="20241015 11:07:13.564"/>
 </kw>
 <doc>Esse teste verifica o site da Clinical Here</doc>
 <tag>site_principal</tag>
-<status status="PASS" starttime="20241015 10:52:48.515" endtime="20241015 10:52:52.616"/>
+<status status="PASS" starttime="20241015 11:07:03.896" endtime="20241015 11:07:13.566"/>
 </test>
 <test id="s1-t2" name="Caso de Teste 02 - Cadastro válido do Cliente&quot;" line="27">
 <kw name="Abrir o navegador" library="Teste_Cadastro_resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20241015 10:52:52.616" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20241015 10:52:52.616" endtime="20241015 10:52:54.581"/>
+<msg timestamp="20241015 11:07:13.567" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20241015 11:07:13.567" endtime="20241015 11:07:17.605"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20241015 10:52:54.581" endtime="20241015 10:52:54.603"/>
+<status status="PASS" starttime="20241015 11:07:17.605" endtime="20241015 11:07:17.680"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:52.616" endtime="20241015 10:52:54.603"/>
+<status status="PASS" starttime="20241015 11:07:13.567" endtime="20241015 11:07:17.681"/>
 </kw>
 <kw name="Acessar a home page do site Clinical Here" library="Teste_Cadastro_resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20241015 10:52:54.603" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/parte-1/php/'</msg>
-<status status="PASS" starttime="20241015 10:52:54.603" endtime="20241015 10:52:54.723"/>
+<msg timestamp="20241015 11:07:17.683" level="INFO">Opening url 'http://localhost/ExperienciaCriativa/parte-1/php/'</msg>
+<status status="PASS" starttime="20241015 11:07:17.682" endtime="20241015 11:07:18.031"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20241015 10:52:55.028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20241015 10:52:54.723" endtime="20241015 10:52:55.028"/>
+<msg timestamp="20241015 11:07:18.367" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20241015 11:07:18.032" endtime="20241015 11:07:18.367"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:54.603" endtime="20241015 10:52:55.028"/>
+<status status="PASS" starttime="20241015 11:07:17.681" endtime="20241015 11:07:18.367"/>
 </kw>
 <kw name="Digitar o cpf de uma recepcionista ativa no campo CPF" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=cpf</arg>
 <arg>${CPF}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:55.032" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:52:55.031" endtime="20241015 10:52:55.116"/>
+<msg timestamp="20241015 11:07:18.368" level="INFO">Typing text '431.628.700-11' into text field 'id=cpf'.</msg>
+<status status="PASS" starttime="20241015 11:07:18.368" endtime="20241015 11:07:18.631"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:55.031" endtime="20241015 10:52:55.116"/>
+<status status="PASS" starttime="20241015 11:07:18.368" endtime="20241015 11:07:18.632"/>
 </kw>
 <kw name="Digitar a senha de uma recepcionista ativa no campo Senha" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=senha</arg>
 <arg>${SENHA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:55.116" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
-<status status="PASS" starttime="20241015 10:52:55.116" endtime="20241015 10:52:55.191"/>
+<msg timestamp="20241015 11:07:18.637" level="INFO">Typing text 'Senha01@' into text field 'id=senha'.</msg>
+<status status="PASS" starttime="20241015 11:07:18.635" endtime="20241015 11:07:18.816"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:55.116" endtime="20241015 10:52:55.191"/>
+<status status="PASS" starttime="20241015 11:07:18.633" endtime="20241015 11:07:18.816"/>
 </kw>
 <kw name="Acionar o botão &quot;Entrar&quot;" library="Teste_Cadastro_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>name=botao_login</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:55.192" level="INFO">Clicking element 'name=botao_login'.</msg>
-<status status="PASS" starttime="20241015 10:52:55.192" endtime="20241015 10:52:56.022"/>
+<msg timestamp="20241015 11:07:18.818" level="INFO">Clicking element 'name=botao_login'.</msg>
+<status status="PASS" starttime="20241015 11:07:18.817" endtime="20241015 11:07:20.096"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:55.192" endtime="20241015 10:52:56.022"/>
+<status status="PASS" starttime="20241015 11:07:18.817" endtime="20241015 11:07:20.097"/>
 </kw>
 <kw name="Clicar no menu &quot;Cadastro de Paciente&quot;" library="Teste_Cadastro_resources">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${opcao_menu}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.022" level="INFO">Clicking link 'Cadastro de Paciente'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.022" endtime="20241015 10:52:56.164"/>
+<msg timestamp="20241015 11:07:20.103" level="INFO">Clicking link 'Cadastro de Paciente'.</msg>
+<status status="PASS" starttime="20241015 11:07:20.100" endtime="20241015 11:07:20.415"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.022" endtime="20241015 10:52:56.164"/>
+<status status="PASS" starttime="20241015 11:07:20.098" endtime="20241015 11:07:20.415"/>
 </kw>
 <kw name="Preencher o campo Nome completo com um nome válido" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=nome</arg>
 <arg>${nome_valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.167" level="INFO">Typing text 'José Maria dos Reis' into text field 'id=nome'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.166" endtime="20241015 10:52:56.267"/>
+<msg timestamp="20241015 11:07:20.418" level="INFO">Typing text 'José Maria dos Reis' into text field 'id=nome'.</msg>
+<status status="PASS" starttime="20241015 11:07:20.417" endtime="20241015 11:07:20.566"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.165" endtime="20241015 10:52:56.267"/>
+<status status="PASS" starttime="20241015 11:07:20.416" endtime="20241015 11:07:20.566"/>
 </kw>
 <kw name="Preencher o campo CPF com um CPF válido" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=cpf</arg>
 <arg>${CPF_valido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.267" level="INFO">Typing text '892.107.420-10' into text field 'id=cpf'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.267" endtime="20241015 10:52:56.362"/>
+<msg timestamp="20241015 11:07:20.568" level="INFO">Typing text '892.107.420-10' into text field 'id=cpf'.</msg>
+<status status="PASS" starttime="20241015 11:07:20.567" endtime="20241015 11:07:20.698"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.267" endtime="20241015 10:52:56.362"/>
+<status status="PASS" starttime="20241015 11:07:20.566" endtime="20241015 11:07:20.699"/>
 </kw>
 <kw name="Preencher o campo Data de Nascimento com uma data válida" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=data</arg>
 <arg>${data_nascimento}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.365" level="INFO">Typing text '11052003' into text field 'id=data'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.364" endtime="20241015 10:52:56.438"/>
+<msg timestamp="20241015 11:07:20.699" level="INFO">Typing text '11052003' into text field 'id=data'.</msg>
+<status status="PASS" starttime="20241015 11:07:20.699" endtime="20241015 11:07:20.843"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.364" endtime="20241015 10:52:56.438"/>
+<status status="PASS" starttime="20241015 11:07:20.699" endtime="20241015 11:07:20.843"/>
 </kw>
 <kw name="Preencher o campo Senha com uma senha válida" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=Senha</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.438" level="INFO">Typing text 'Senha01@' into text field 'id=Senha'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.438" endtime="20241015 10:52:56.514"/>
+<msg timestamp="20241015 11:07:20.845" level="INFO">Typing text 'Senha01@' into text field 'id=Senha'.</msg>
+<status status="PASS" starttime="20241015 11:07:20.844" endtime="20241015 11:07:21.154"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.438" endtime="20241015 10:52:56.514"/>
+<status status="PASS" starttime="20241015 11:07:20.844" endtime="20241015 11:07:21.154"/>
 </kw>
 <kw name="Preencher o campo Confirme a senha com a mesma senha do campo Senha" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=confirmaSenha</arg>
 <arg>${Senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.514" level="INFO">Typing text 'Senha01@' into text field 'id=confirmaSenha'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.514" endtime="20241015 10:52:56.604"/>
+<msg timestamp="20241015 11:07:21.159" level="INFO">Typing text 'Senha01@' into text field 'id=confirmaSenha'.</msg>
+<status status="PASS" starttime="20241015 11:07:21.156" endtime="20241015 11:07:21.481"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.514" endtime="20241015 10:52:56.604"/>
+<status status="PASS" starttime="20241015 11:07:21.155" endtime="20241015 11:07:21.482"/>
 </kw>
 <kw name="Preencher o campo Altura corretamente" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=alt</arg>
 <arg>${altura}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.604" level="INFO">Typing text '1.70' into text field 'id=alt'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.604" endtime="20241015 10:52:56.682"/>
+<msg timestamp="20241015 11:07:21.486" level="INFO">Typing text '1.70' into text field 'id=alt'.</msg>
+<status status="PASS" starttime="20241015 11:07:21.486" endtime="20241015 11:07:21.787"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.604" endtime="20241015 10:52:56.682"/>
+<status status="PASS" starttime="20241015 11:07:21.484" endtime="20241015 11:07:21.787"/>
 </kw>
 <kw name="Preencher o campo Peso corretamente" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=pes</arg>
 <arg>${peso}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.682" level="INFO">Typing text '55' into text field 'id=pes'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.682" endtime="20241015 10:52:56.753"/>
+<msg timestamp="20241015 11:07:21.792" level="INFO">Typing text '55' into text field 'id=pes'.</msg>
+<status status="PASS" starttime="20241015 11:07:21.790" endtime="20241015 11:07:21.966"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.682" endtime="20241015 10:52:56.753"/>
+<status status="PASS" starttime="20241015 11:07:21.789" endtime="20241015 11:07:21.966"/>
 </kw>
 <kw name="Preencher o campo Telefone corretamente" library="Teste_Cadastro_resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=tel</arg>
 <arg>${telefone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.753" level="INFO">Typing text '343234323' into text field 'id=tel'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.753" endtime="20241015 10:52:56.839"/>
+<msg timestamp="20241015 11:07:21.969" level="INFO">Typing text '343234323' into text field 'id=tel'.</msg>
+<status status="PASS" starttime="20241015 11:07:21.968" endtime="20241015 11:07:22.100"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.753" endtime="20241015 10:52:56.839"/>
+<status status="PASS" starttime="20241015 11:07:21.967" endtime="20241015 11:07:22.100"/>
 </kw>
 <kw name="Preencher o campo Gênero com um gênero válido" library="Teste_Cadastro_resources">
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <arg>id=sexo</arg>
 <arg>${genero}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20241015 10:52:56.839" level="INFO">Selecting options from selection list 'id=sexo' by value Masculino.</msg>
-<status status="PASS" starttime="20241015 10:52:56.839" endtime="20241015 10:52:56.914"/>
+<msg timestamp="20241015 11:07:22.103" level="INFO">Selecting options from selection list 'id=sexo' by value Masculino.</msg>
+<status status="PASS" starttime="20241015 11:07:22.102" endtime="20241015 11:07:22.226"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.839" endtime="20241015 10:52:56.914"/>
+<status status="PASS" starttime="20241015 11:07:22.101" endtime="20241015 11:07:22.226"/>
 </kw>
 <kw name="Acionar o botão &quot;Cadastrar&quot;" library="Teste_Cadastro_resources">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=Enviar</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20241015 10:52:56.916" level="INFO">Clicking element 'id=Enviar'.</msg>
-<status status="PASS" starttime="20241015 10:52:56.915" endtime="20241015 10:52:56.982"/>
+<msg timestamp="20241015 11:07:22.229" level="INFO">Clicking element 'id=Enviar'.</msg>
+<status status="PASS" starttime="20241015 11:07:22.228" endtime="20241015 11:07:22.358"/>
 </kw>
-<status status="PASS" starttime="20241015 10:52:56.915" endtime="20241015 10:52:56.982"/>
+<status status="PASS" starttime="20241015 11:07:22.227" endtime="20241015 11:07:22.359"/>
 </kw>
 <kw name="Verificar se é exibida a mensagem de erro &quot;${mensagem}&quot;" library="Teste_Cadastro_resources" sourcename="Verificar se é exibida a mensagem de erro &quot;${mensagem_erro}&quot;">
-<msg timestamp="20241015 10:52:56.999" level="FAIL">Variable '${mensagem}' not found. Did you mean:
+<msg timestamp="20241015 11:07:22.362" level="FAIL">Variable '${mensagem}' not found. Did you mean:
     ${mensagem_erro}</msg>
-<status status="FAIL" starttime="20241015 10:52:56.982" endtime="20241015 10:52:56.999"/>
+<status status="FAIL" starttime="20241015 11:07:22.359" endtime="20241015 11:07:22.362"/>
 </kw>
 <doc>Esse teste verifica o cadastro do cliente correto</doc>
 <tag>site_principal</tag>
-<status status="FAIL" starttime="20241015 10:52:52.616" endtime="20241015 10:52:57.000">Variable '${mensagem}' not found. Did you mean:
+<status status="FAIL" starttime="20241015 11:07:13.567" endtime="20241015 11:07:22.363">Variable '${mensagem}' not found. Did you mean:
     ${mensagem_erro}</status>
 </test>
 <doc>Essa suíte testa o site da Clinical Here</doc>
-<status status="FAIL" starttime="20241015 10:52:48.155" endtime="20241015 10:52:57.002"/>
+<status status="FAIL" starttime="20241015 11:07:02.834" endtime="20241015 11:07:22.365"/>
 </suite>
 <statistics>
 <total>

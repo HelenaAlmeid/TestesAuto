@@ -83,6 +83,6 @@ Preencher o campo CPF com um CPF válido
 	Input Text	id=cpf	${CPF_valido}
 
 Verificar se é exibida a mensagem de confirmação "${mensagem_valida}"
-	${mensagem}=	Get Text	css=section.sucess-message p
-	Should Be Equal As Strings	${mensagem}	${mensagem_valida}
+	${mensagem_v}=	Get Text	css=section.sucess-message p
+	Should Be Equal As Strings	${mensagem_v}	${mensagem_valida}
 
