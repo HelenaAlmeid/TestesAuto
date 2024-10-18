@@ -52,6 +52,7 @@ Caso de teste 03 - Cadastrar um médico com CPF já cadastrado
     Clicar no menu "Cadastro de Médico"
 	Preencher o campo Nome completo com um nome válido
 	Preencher o campo CPF com um CPF já cadastrado
+	Preencher o campo Data de Nascimento com uma data válida
 	Preencher o campo CRM com um crm válido
 	Preencher o campo Especialidade com uma especialidade válida
 	Preencher o campo Senha com uma senha válida
